@@ -1,11 +1,11 @@
-# Kejutkan teman-temanmu!
+meme_dict = {
+            "CRINGE": "Sesuatu yang sangat aneh atau memalukan",
+            "LOL": "Tanggapan umum terhadap sesuatu yang lucu",
+            }
+            
+word = input("Ketik kata yang tidak Kamu mengerti (gunakan huruf kapital semua!): ")
 
-import random
-
-hobi = input("masukkan hobimu:")
-peliharaan = input("masukkan peliharaanmu:")
-proyek = input("masukkan proyek favoritmu:")
-fav_menu = input("masukkan menu favoritmu:")
-
-fakta_random = [hobi, peliharaan, proyek, fav_menu]
-print(random.choice(fakta_random))
+if word in meme_dict.keys():
+    print("makna dari",word,"adalah",meme_dict[word])
+else:
+    print("kata tidak ditemukan")
